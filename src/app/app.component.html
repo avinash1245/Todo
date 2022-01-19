@@ -1,0 +1,8 @@
+<h1>{{title}}</h1>
+<input class="task" type="text" name="inputTodo " [(ngModel)]="inputTodo" placeholder="enter the name" #task />
+<br>
+<button (click)="addTask(task.value)" class="button1">Add</button>
+<div *ngFor="let todo of todos; let i=index;">
+  <div class="input1"> {{todo.name}} <button (click)="editTask(i)">edit</button> 
+    <button (click)="removeTask(i)">remove</button> <button class="doneTodo {{(todo.completed ?'done':'')}}" (click)="doneTask(i)">done</button></div><br>
+</div>

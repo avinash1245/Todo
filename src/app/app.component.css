@@ -1,0 +1,25 @@
+.input1{
+    color: rosybrown;
+}
+.task{
+    background-color: papayawhip;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+h1{
+    text-align: center;
+}
+.todo.done .content {
+	text-decoration: line-through;
+}
+.button1{
+   margin: 5px 50%;
+   padding: 20px;
+    color: red;
+}
+.doneTodo:visited{
+    color: blue;
+    background-color: blue;
+
+}
